@@ -1,0 +1,21 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.info {
+    margin: 1.5rem auto;
+    width: 35rem;
+
+    .inputs {
+        margin: 1.5rem auto;
+    }
+
+    .button {
+        margin: 3rem auto;
+        width: 100%;
+    }
+}

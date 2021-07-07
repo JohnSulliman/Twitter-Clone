@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import login from '../styles/login.module.css'
-import { Button, Form, Container } from 'react-bootstrap'
+import Head from 'next/head';
+import login from '../styles/login.module.scss';
+import { Button, Form, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
@@ -21,7 +21,6 @@ export default function Home() {
         <Form className={login.inputs}>
           <Form.Group className={login.body_input}>
             <Form.Control 
-              className={login.input} 
               size='md' type='text' 
               placeholder='Celular, e-mail ou nome de usuário' 
             />
@@ -29,7 +28,6 @@ export default function Home() {
 
           <Form.Group className={login.body_input}>
             <Form.Control 
-              className={login.input} 
               size='md' type='password' 
               placeholder='Senha' 
             />
@@ -38,8 +36,12 @@ export default function Home() {
           <Button className={login.button} type='submit'>Entrar</Button>
         </Form>
 
-        <div className={login.acess}>
-          <p>Esqueceu a senha? . Inscreva-se no Twitter</p>
+        <div>
+          <p>
+            <a className={login.a} href='/recoverPassword'>Esqueceu a senha? </a>
+            .
+            <a className={login.a} href='/register'> Inscrever-se no Twitter</a>
+          </p>
         </div>
 
       </Container>
